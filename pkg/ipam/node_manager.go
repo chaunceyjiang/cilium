@@ -231,14 +231,14 @@ func (n *NodeManager) Start(ctx context.Context) error {
 		mngr := controller.NewManager()
 		mngr.UpdateController("ipam-node-interval-refresh",
 			controller.ControllerParams{
-				Group:       ipamNodeIntervalControllerGroup,
-				RunInterval: time.Minute,
+				Group: ipamNodeIntervalControllerGroup,
 				DoFunc: func(ctx context.Context) error {
 					if syncTime, ok := n.instancesAPIResync(ctx); ok {
 						n.Resync(ctx, syncTime)
 					}
 					return nil
 				},
+				ErrorRetryBaseDuration: 10 * time.Second,
 			})
 	}()
 
