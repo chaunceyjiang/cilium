@@ -36,7 +36,7 @@ Selectors Flags:
                          RFC3339Nano:            2006-01-02T15:04:05.999999999-07:00
                          RFC1123Z:               Mon, 02 Jan 2006 15:04:05 -0700
                         
-
+x
 Filters Flags:
   -A, --all-namespaces filter[=true]        Show all flows in any Kubernetes namespace.
       --cluster filter                      Show all flows which match the cluster names (e.g. "test-cluster", "prod-*")
