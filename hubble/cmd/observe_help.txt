@@ -162,7 +162,7 @@ Other Flags:
   -s, --silent-errors                          Silently ignores errors and warnings
 
 Global Flags:
-      --config string   Optional config file (default "%s")
+      --config string   Optional config file (default "/Users/chauncey/Library/Application Support/hubble/config.yaml")
   -D, --debug           Enable debug messages
 
 Get help:
